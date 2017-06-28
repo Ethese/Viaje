@@ -18,12 +18,12 @@ namespace Cheche
 
         void Update()
         {
-            movimiento();
+            
         }
 
         void FixedUpdate()
         {
-            rotacion();
+            movimiento();
         }
 
         void rotacion()
@@ -35,30 +35,19 @@ namespace Cheche
 
         void movimiento()
         {
+            float rotationSpeed = 25;
+            Vector2 velocity = Vector2.zero;
+            float acceleration = 8000f;
+            float maxVelocity = 20f;
             if (control)
             {
-                //Caminar            
-                if (Input.GetKey(KeyCode.RightArrow))
-                {
-                    rb.AddForce(Vector2.right * 300);
-                }
-                if (Input.GetKey(KeyCode.LeftArrow))
-                {
-                    rb.AddForce(Vector2.left * 300);
-                }
-                if (Input.GetKey(KeyCode.UpArrow))
-                {
-                    rb.AddForce(Vector2.up * 300);
-                }
-                if (Input.GetKey(KeyCode.DownArrow))
-                {
-                    rb.AddForce(Vector2.down * 300);
-                }
+                float rotation = Input.GetAxis("Vertical") * rotationSpeed * Time.deltaTime;
+                transform.Rotate(0, 0, rotation);
 
-                if (Input.GetKey(KeyCode.Space))
-                {
-                    rb.AddForce(Vector2.up * 800);
-                }
+                Vector2 force = (Vector2)transform.right * Input.GetAxis("Horizontal") * acceleration * Time.deltaTime;
+                velocity += force;
+                velocity = Vector2.ClampMagnitude(velocity, maxVelocity);
+                transform.Translate(velocity * Time.deltaTime);
             }
         }
     }
