@@ -9,10 +9,11 @@ public class PlayerMove : MonoBehaviour {
     public Vector2 speed = new Vector2(50,50);
     public bool puedeSaltar = false;
     public int salto;
-    
+    public Vector3 eulerAngleVelocity;
+
     public Rigidbody2D rb;
     public Animator ani;
-    private Transform Pie;
+    private Transform cuerpo;
 
 
 
@@ -21,7 +22,7 @@ public class PlayerMove : MonoBehaviour {
         
         ani = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
-        Pie = this.transform.Find("JulioPies");
+        cuerpo = this.transform.Find("playerJulio");
     }
     
     private void OnTriggerEnter2D(Collider2D col)
@@ -59,17 +60,17 @@ public class PlayerMove : MonoBehaviour {
 
         if (Input.GetKeyDown("right"))
         {
-            
-
+            ani.SetBool("Move", true);
+            transform.Rotate(0,180,0);
         }
         if (Input.GetKeyDown("left"))
         {
-            
+            ani.SetBool("Move", true);
         }
 
         if (Input.GetKeyUp("left") || Input.GetKeyUp("right"))
         {
-            
+            ani.SetBool("Move", false);
         }
 
 
