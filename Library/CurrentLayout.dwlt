@@ -232,7 +232,7 @@ MonoBehaviour:
   m_MinSize: {x: 336, y: 271}
   m_MaxSize: {x: 14006, y: 10021}
   vertical: 0
-  controlID: 106
+  controlID: 114
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -279,12 +279,12 @@ MonoBehaviour:
     height: 390
   m_MinSize: {x: 104, y: 121}
   m_MaxSize: {x: 4004, y: 4021}
-  m_ActualView: {fileID: 14}
+  m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 14}
   - {fileID: 19}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -356,7 +356,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 1
+    m_EnableMouseInput: 0
     m_EnableSliderZoom: 0
     m_UniformScale: 1
     m_UpDirection: 1
@@ -414,8 +414,8 @@ MonoBehaviour:
     height: 480
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: a4250000
-    m_LastClickedID: 9636
+    m_SelectedIDs: 00daffff
+    m_LastClickedID: 0
     m_ExpandedIDs: e4fbffff0000000088250000a4250000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -471,9 +471,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -9.060601, y: -2.629626, z: 0}
+    m_Target: {x: 0.8226581, y: -0.6482292, z: 0}
     speed: 2
-    m_Value: {x: -9.060601, y: -2.629626, z: 0}
+    m_Value: {x: 0.8226581, y: -0.6482292, z: 0}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -500,9 +500,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 22.946774
+    m_Target: 8.429983
     speed: 2
-    m_Value: 22.946774
+    m_Value: 8.429983
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -543,7 +543,7 @@ MonoBehaviour:
     m_KeySerializationHelper:
     - {fileID: 1107725910534152146, guid: 94bd3c43b9b5c4e40920f494816bd5c8, type: 2}
     m_ValueSerializationHelper:
-    - {x: 354.00003, y: 268}
+    - {x: 320.00003, y: 271}
   m_PreviewAnimator: {fileID: 0}
   m_AnimatorController: {fileID: 9100000, guid: 94bd3c43b9b5c4e40920f494816bd5c8,
     type: 2}
@@ -599,18 +599,18 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Scripts
+    - Assets
   m_ViewMode: 1
   m_StartGridSize: 63
   m_LastFolders:
-  - Assets/Scripts
+  - Assets
   m_LastFoldersGridSize: 63
   m_LastProjectPath: C:\Users\jorge\Desktop\Viaje\Viaje
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 44250000
-    m_LastClickedID: 9540
+    m_SelectedIDs: b6240000
+    m_LastClickedID: 9398
     m_ExpandedIDs: 00000000b62400000625000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0

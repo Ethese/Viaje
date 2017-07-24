@@ -10,7 +10,7 @@ public class PlayerMove : MonoBehaviour {
     public bool puedeSaltar = false;
     public int salto;
     public Vector3 eulerAngleVelocity;
-    public int giro = 1;
+    public bool giro = false;
 
     // reference
     public Rigidbody2D rb;
@@ -35,6 +35,7 @@ public class PlayerMove : MonoBehaviour {
         if (col.tag == "floor")
         {
             puedeSaltar = true;
+            ani.SetBool("Saltar", false);
         }
     }
 
@@ -43,6 +44,7 @@ public class PlayerMove : MonoBehaviour {
         if (col.tag == "floor")
         {
             puedeSaltar = true;
+            ani.SetBool("Saltar", false);
         }
     }
 
@@ -51,6 +53,7 @@ public class PlayerMove : MonoBehaviour {
         if (col.tag == "floor")
         {
             puedeSaltar = false;
+            ani.SetBool("Saltar", true);
         }
     }
     
@@ -66,19 +69,19 @@ public class PlayerMove : MonoBehaviour {
         if (Input.GetKeyDown("right"))
         {
             ani.SetBool("Move", true);
-            if (giro == 1)
+            if (giro)
             {
                 july.Rotate(0,180,0);
-                giro = giro * -1;
+                giro = false;
             }
         }
         if (Input.GetKeyDown("left"))
         {
             ani.SetBool("Move", true);
-            if (giro == -1)
+            if (!giro)
             {
                 july.Rotate(0, 180, 0);
-                giro = giro * -1;
+                giro = true;
             }
         }
 
