@@ -19,10 +19,26 @@ namespace Cheche
         }
         void Update()
         {
+            Movimiento mov = ship.GetComponent<Movimiento>();
+            
+
             startPosition = start.position;
             Movenemt();
-            float newPosition = Mathf.Repeat(Time.time * scrollSpeed, tileSizeZ);
-           transform.position = startPosition + Vector3.left * newPosition;
+            
+            if (scrollSpeed > 0)
+            {
+                float newPosition = Mathf.Repeat(Time.time * scrollSpeed, tileSizeZ);
+
+                mov.pos.x = 1;
+                mov.pos.z = 0;
+                mov.pos.y = -1;
+                transform.position = startPosition - mov.pos * newPosition;
+            }
+            if (scrollSpeed == 0)
+            {
+                
+            }
+            
         }
 
 

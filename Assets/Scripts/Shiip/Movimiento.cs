@@ -9,6 +9,8 @@ namespace Cheche
         public float rotSpeed = 180f;
         public bool isDown;
         public Animator anim;
+        public Vector3 pos;
+        public Quaternion rot;
         void Start()
         {
             anim = GetComponent<Animator>();
@@ -21,8 +23,8 @@ namespace Cheche
 
         void shipMov()
         {
-            Quaternion rot = transform.rotation;
-            Vector3 pos = transform.position;
+            rot = transform.rotation;
+            pos = transform.position;
             anim.SetBool("IsMoving", false);
             maxSpeed = 0;
 

@@ -1,8 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
-- path: Assets/scenes/Ship.unity
-=======
 - path: Assets/scenes/Animaciones.unity
->>>>>>> 2dc2d39502e9e7e9c83c6160ce1d17a55d1a7ed1
   isLoaded: 1
   isActive: 1
