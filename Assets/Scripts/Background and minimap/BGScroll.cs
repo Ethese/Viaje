@@ -17,28 +17,35 @@ namespace Cheche
             ship = GameObject.FindGameObjectWithTag("Player");
             
         }
-        void Update()
+        void FixedUpdate()
         {
             Movimiento mov = ship.GetComponent<Movimiento>();
-            
 
+            float newPosition = Mathf.Repeat(Time.time * scrollSpeed, tileSizeZ);
             startPosition = start.position;
             Movenemt();
-            
-            if (scrollSpeed > 0)
-            {
-                float newPosition = Mathf.Repeat(Time.time * scrollSpeed, tileSizeZ);
+            transform.position = startPosition - mov.pos * newPosition;
 
-                mov.pos.x = 1;
-                mov.pos.z = 0;
-                mov.pos.y = -1;
-                transform.position = startPosition - mov.pos * newPosition;
-            }
-            if (scrollSpeed == 0)
+            if (ship.transform.rotation.z >= 0  && ship.transform.rotation.z <= 90)
             {
-                
+                mov.pos.x = 1;
+                mov.pos.y = 0;
             }
-            
+            if (ship.transform.rotation.z >= 180 && ship.transform.rotation.z <= 270)
+            {
+                mov.pos.x = -1;
+                mov.pos.y = 0;
+            }
+            if (ship.transform.rotation.z >= 90 && ship.transform.rotation.z <= 180)
+            {
+                mov.pos.x = 0;
+                mov.pos.y = 1;
+            }
+            if (ship.transform.rotation.z >= 270 && ship.transform.rotation.z <= 359)
+            {
+                mov.pos.x = 0;
+                mov.pos.y = -1;
+            }
         }
 
 
