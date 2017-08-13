@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 namespace Cheche
 {
@@ -11,6 +12,7 @@ namespace Cheche
         public Animator anim;
         public Vector3 pos;
         public Quaternion rot;
+        GameObject planeta;
         void Start()
         {
             anim = GetComponent<Animator>();
@@ -19,6 +21,10 @@ namespace Cheche
         void FixedUpdate()
         {
             shipMov();
+        }
+        void Update()
+        {
+            cambioscene();
         }
 
         void shipMov()
@@ -62,6 +68,19 @@ namespace Cheche
 
                 transform.position = pos;
                 anim.SetBool("IsMoving", true);
+            }
+        }
+
+        void cambioscene()
+        {
+            planeta = GameObject.FindGameObjectWithTag("Planets");
+            Menu menu = planeta.GetComponent<Menu>();
+            if (menu.activo == true)
+            {
+                if (Input.GetKeyDown(KeyCode.Y))
+                {
+                    SceneManager.LoadScene("Test");
+                }
             }
         }
     }
