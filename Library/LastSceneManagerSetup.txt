@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/scenes/Ship.unity
+- path: Assets/scenes/Animaciones.unity
   isLoaded: 1
   isActive: 1

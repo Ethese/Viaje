@@ -9,7 +9,6 @@ public class PlayerMove : MonoBehaviour {
     public Vector2 speed = new Vector2(50,50);
     public bool puedeSaltar = false;
     public int salto;
-    public Vector3 eulerAngleVelocity;
     public bool giro = false;
 
     // reference
@@ -61,7 +60,7 @@ public class PlayerMove : MonoBehaviour {
     // Update is called once per frame
     void Update () {
         //-----Movement-----//
-        float inputx = Input.GetAxis("Horizontal");
+        float inputx = Input.GetAxisRaw("Horizontal");
         Vector3 movement = new Vector3(speed.x * inputx, 0, 0);
         movement *= Time.deltaTime;
         transform.Translate(movement);
