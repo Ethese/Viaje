@@ -9,22 +9,45 @@ namespace Cheche
     {
         public GameObject UI;
         public bool activo;
+        bool Paused;
+        void Start()
+        {
+            Paused = false; 
+        }
         void Update()
         {
-           // UI.SetActive(false);
+            Pause();
         }
 
         void OnTriggerEnter2D(Collider2D other)
         {
             UI.SetActive(true);
-            Text text = UI.GetComponentInChildren<Text>();
-            text.text = "Entrando al planeta: " + transform.name;
+            Text text = UI.GetComponent<Text>();
+            text.text =  transform.name;
             activo = true;
         }
         void OnTriggerExit2D(Collider2D other)
         {
             UI.SetActive(false);
             activo = false;
+        }
+
+        void Pause()
+        {
+            if (Input.GetKeyDown(KeyCode.Return))
+            {
+                Paused = !Paused;
+            }
+            if (Paused)
+            {
+                Time.timeScale = 0;
+            }
+            if (!Paused)
+            {
+                Time.timeScale = 1;
+            }
+
+
         }
 
     }
