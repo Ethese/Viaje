@@ -96,6 +96,7 @@ public class PlayerMove : MonoBehaviour {
             if(Input.GetKeyDown("space"))
             {
                 rb.AddForce(Vector2.up * salto);
+                
             }
         }
             
