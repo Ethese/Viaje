@@ -78,6 +78,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Imported Assets\FarlandSkies\Demo\Scripts\Player\FPSWalkerEnhanced.cs" />
+    <Compile Include="Assets\Imported Assets\FarlandSkies\Demo\Scripts\Player\SmoothMouseLook.cs" />
+    <Compile Include="Assets\Imported Assets\FarlandSkies\Demo\Scripts\Skybox\SkyboxChanger.cs" />
+    <Compile Include="Assets\Imported Assets\FarlandSkies\Demo\Scripts\Skybox\SkyboxRotator.cs" />
     <Compile Include="Assets\Scripts\Background and minimap\BGScroll.cs" />
     <Compile Include="Assets\Scripts\Background and minimap\FollowUV.cs" />
     <Compile Include="Assets\Scripts\Background and minimap\Parallax.cs" />
@@ -88,6 +92,8 @@
     <Compile Include="Assets\Scripts\World\Menu.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\Imported Assets\spritefont_and_other\Pixel Font - Tripfive\_README.txt" />
+    <None Include="Assets\Imported Assets\spritefont_and_other\document_and_picturelist\readme.txt" />
     <None Include="Assets\Shaders\MaskShader.shader" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

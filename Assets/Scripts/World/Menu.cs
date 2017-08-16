@@ -21,7 +21,7 @@ namespace Cheche
         void OnTriggerEnter2D(Collider2D other)
         {
             UI.SetActive(true);
-            Text text = UI.GetComponent<Text>();
+            TextMesh text = UI.GetComponent<TextMesh>();
             text.text = transform.name;
             activo = true;
         }
