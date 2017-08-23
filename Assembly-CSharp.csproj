@@ -46,15 +46,23 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Imported Assets\FarlandSkies\Demo\Scripts\Player\FPSWalkerEnhanced.cs" />
+     <Compile Include="Assets\Imported Assets\FarlandSkies\Demo\Scripts\Player\SmoothMouseLook.cs" />
+     <Compile Include="Assets\Imported Assets\FarlandSkies\Demo\Scripts\Skybox\SkyboxChanger.cs" />
+     <Compile Include="Assets\Imported Assets\FarlandSkies\Demo\Scripts\Skybox\SkyboxRotator.cs" />
      <Compile Include="Assets\Scripts\Background and minimap\BGScroll.cs" />
+     <Compile Include="Assets\Scripts\Background and minimap\BgParallax.cs" />
      <Compile Include="Assets\Scripts\Background and minimap\FollowUV.cs" />
      <Compile Include="Assets\Scripts\Background and minimap\Parallax.cs" />
      <Compile Include="Assets\Scripts\Background and minimap\ScrollUV.cs" />
      <Compile Include="Assets\Scripts\Camera\Follow.cs" />
      <Compile Include="Assets\Scripts\PlayerMove.cs" />
      <Compile Include="Assets\Scripts\Shiip\Movimiento.cs" />
+     <Compile Include="Assets\Scripts\ShipLand.cs" />
      <Compile Include="Assets\Scripts\World\Menu.cs" />
+     <None Include="Assets\Imported Assets\spritefont_and_other\document_and_picturelist\readme.txt" />
      <None Include="Assets\Shaders\MaskShader.shader" />
+     <None Include="Assets\Imported Assets\spritefont_and_other\Pixel Font - Tripfive\_README.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>D:/Programas/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
