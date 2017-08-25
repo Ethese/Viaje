@@ -10,35 +10,37 @@ namespace Viaje
     {
 
         //variable
-        private bool moveOb = false;
+        public bool puedeInt = false;
 
         //reference
         public Canvas press;
-        public Animator ZaWarudo;
+        public Animator door;
 
         // Use this for initialization
         void Start()
         {
             press = press.GetComponent<Canvas>();
-            ZaWarudo = ZaWarudo.GetComponent<Animator>();
+            door = door.GetComponent<Animator>();
             press.enabled = false;
-
         }
 
-        
-
-        
+        private void OnTriggerEnter2D(Collider2D col)
+        {
+            if (col.tag == "Player")
+            {
+                press.enabled = true;
+                puedeInt = true;
+            }
+        }
 
         private void OnTriggerStay2D(Collider2D col)
         {
-            press.enabled = true;
-            if (col.tag == "Player" && Input.GetKeyDown(KeyCode.E))
+            
+            if (col.tag == "Player")
             {
-               
-                ZaWarudo.SetBool("Open", true);
+                press.enabled = true;
+                puedeInt = true;
             }
-
-
         }
 
         private void OnTriggerExit2D(Collider2D col)
@@ -46,17 +48,21 @@ namespace Viaje
             if (col.tag == "Player")
             {
                 press.enabled = false;
+                puedeInt = false;
             }
-            
         }
-
-
 
 
         // Update is called once per frame
         void Update()
         {
-
+            if (puedeInt)
+            {
+                if(Input.GetKey("e"))
+                {
+                    door.SetBool("Open", true);
+                }
+            }
         }
     }
 }

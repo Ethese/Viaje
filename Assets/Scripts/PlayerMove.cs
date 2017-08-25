@@ -7,7 +7,7 @@ namespace Viaje {
     public class PlayerMove : MonoBehaviour
     {
 
-
+        
         // variables
         public Vector2 speed = new Vector2(50, 50);
         public bool puedeSaltar = false;
@@ -25,7 +25,6 @@ namespace Viaje {
         // Use this for initialization
         void Start()
         {
-
             ani = GetComponent<Animator>();
             rb = GetComponent<Rigidbody2D>();
             july = this.transform.Find("JulioFull");
@@ -39,6 +38,7 @@ namespace Viaje {
             {
                 puedeSaltar = true;
                 ani.SetBool("Saltar", false);
+                
             }
         }
 
@@ -101,10 +101,8 @@ namespace Viaje {
                 if (Input.GetKeyDown("space"))
                 {
                     rb.AddForce(Vector2.up * salto);
-                    
                 }
             }
-
         }
 
 
