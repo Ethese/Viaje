@@ -8,6 +8,7 @@ namespace Cheche
     {
         public GameObject UI;
         public bool activo;
+        public string nombre;
         bool Paused;
         void Start()
         {
@@ -22,6 +23,7 @@ namespace Cheche
         {
             activo = true;
             TextMesh text = UI.GetComponent<TextMesh>();
+            nombre = transform.name;
             text.text = transform.name;
             UI.SetActive(true);
         }

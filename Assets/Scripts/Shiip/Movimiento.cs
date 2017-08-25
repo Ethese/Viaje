@@ -77,9 +77,10 @@ namespace Cheche
             Menu menu = planeta.GetComponent<Menu>();
             if (menu.activo == true)
             {
+                Debug.Log(menu.nombre);
                 if (Input.GetKeyDown(KeyCode.Y))
                 {
-                    SceneManager.LoadScene("Test");
+                    SceneManager.LoadScene(menu.nombre);
                 }
             }
         }
