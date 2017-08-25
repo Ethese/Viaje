@@ -25,32 +25,19 @@ namespace Viaje
 
         }
 
-        private void OnTriggerEnter2D(Collider2D col)
-        {
-            if (col.tag == "Player")
-            {
-                press.enabled = true;
-                if (Input.GetKeyDown(KeyCode.E))
-                {
-                    ZaWarudo.SetBool("Open", true);
-                }
-            }
-            
+        
 
-        }
+        
 
         private void OnTriggerStay2D(Collider2D col)
         {
-            if (col.tag == "Player")
+            press.enabled = true;
+            if (col.tag == "Player" && Input.GetKeyDown(KeyCode.E))
             {
-                press.enabled = true;
-                if (Input.GetKeyDown(KeyCode.E))
-                {
-                    ZaWarudo.SetBool("Open", true);
-                }
-                
+               
+                ZaWarudo.SetBool("Open", true);
             }
-            
+
 
         }
 
@@ -59,7 +46,6 @@ namespace Viaje
             if (col.tag == "Player")
             {
                 press.enabled = false;
-                ZaWarudo.SetBool("Open", false);
             }
             
         }
