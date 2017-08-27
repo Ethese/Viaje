@@ -10,7 +10,7 @@ namespace Viaje
     {
 
         //variable
-        public bool puedeInt = false;
+        private bool puedeInt = false;
 
         //reference
         public Canvas press;
@@ -63,6 +63,9 @@ namespace Viaje
                     door.SetBool("Open", true);
                 }
             }
+
+
+            
         }
     }
 }
