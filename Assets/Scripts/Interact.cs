@@ -15,12 +15,14 @@ namespace Viaje
         //reference
         public Canvas press;
         public Animator door;
+        public Animator lever;
 
         // Use this for initialization
         void Start()
         {
             press = press.GetComponent<Canvas>();
             door = door.GetComponent<Animator>();
+            lever = lever.GetComponent<Animator>();
             press.enabled = false;
         }
 
@@ -60,7 +62,8 @@ namespace Viaje
             {
                 if(Input.GetKey("e"))
                 {
-                    door.SetBool("Open", true);
+                    door.SetBool("open/close", true);
+                    lever.SetBool("ud",true);
                 }
             }
 
