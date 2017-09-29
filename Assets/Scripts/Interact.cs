@@ -11,6 +11,7 @@ namespace Viaje
 
         //variable
         private bool puedeInt = false;
+        private bool close = true;
 
         //reference
         public Canvas press;
@@ -60,15 +61,29 @@ namespace Viaje
         {
             if (puedeInt)
             {
-                if(Input.GetKey("e"))
+                if(Input.GetKeyDown("e"))
                 {
-                    door.SetBool("open/close", true);
-                    lever.SetBool("ud",true);
+                    if (close)
+                    {
+                        door.SetBool("open/close", true);
+                        lever.SetBool("ud", true);
+                        close = false;
+                    }
+                    else
+                    {
+                        door.SetBool("open/close", false);
+                        lever.SetBool("ud", false);
+                        close = true;
+                    }
+                    
                 }
+                
             }
 
-
             
+
+
+
         }
     }
 }
