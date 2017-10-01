@@ -65,25 +65,18 @@ namespace Viaje
                 {
                     if (close)
                     {
-                        door.SetBool("open/close", true);
+                        door.SetBool("up", true);
                         lever.SetBool("ud", true);
                         close = false;
                     }
                     else
                     {
-                        door.SetBool("open/close", false);
+                        door.SetBool("up", false);
                         lever.SetBool("ud", false);
                         close = true;
                     }
-                    
                 }
-                
             }
-
-            
-
-
-
         }
     }
 }

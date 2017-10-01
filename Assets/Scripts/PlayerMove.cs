@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using Viaje;
 
-namespace Viaje {
+namespace Viaje
+{
     public class PlayerMove : MonoBehaviour
     {
 
@@ -13,6 +14,7 @@ namespace Viaje {
         public bool puedeSaltar = false;
         public int salto;
         public bool giro = false;
+        public bool gotCard = false;
 
         // reference
         public Rigidbody2D rb;
@@ -38,7 +40,11 @@ namespace Viaje {
             {
                 puedeSaltar = true;
                 ani.SetBool("Saltar", false);
-                
+            }
+
+            if(col.tag == "goldCard")
+            {
+                gotCard = true;
             }
         }
 

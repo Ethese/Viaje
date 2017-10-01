@@ -92,6 +92,7 @@
     <Compile Include="Assets\Scripts\Background and minimap\Parallax.cs" />
     <Compile Include="Assets\Scripts\Background and minimap\ScrollUV.cs" />
     <Compile Include="Assets\Scripts\Camera\Follow.cs" />
+    <Compile Include="Assets\Scripts\GlassDoor.cs" />
     <Compile Include="Assets\Scripts\Interact.cs" />
     <Compile Include="Assets\Scripts\PlayerMove.cs" />
     <Compile Include="Assets\Scripts\Shiip\Movimiento.cs" />
