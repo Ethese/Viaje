@@ -1,0 +1,328 @@
+fileFormatVersion: 2
+guid: f6cb430eed93a9f4888b3930e4d126fd
+timeCreated: 1497381965
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Special1_0
+    21300002: Special1_1
+    21300004: Special1_2
+    21300006: Special1_3
+    21300008: Special1_4
+    21300010: Special1_5
+    21300012: Special1_6
+    21300014: Special1_7
+    21300016: Special1_8
+    21300018: Special1_9
+    21300020: Special1_11
+    21300022: Special1_13
+    21300024: Special1_14
+    21300026: Special1_15
+    21300028: Special1_16
+    21300030: Special1_17
+    21300032: Special1_18
+    21300034: Special1_19
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 10
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Special1_0
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 240
+        width: 38
+        height: 37
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Special1_1
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 240
+        width: 38
+        height: 37
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Special1_2
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 240
+        width: 43
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Special1_3
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 240
+        width: 43
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Special1_4
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 122
+        width: 128
+        height: 85
+      alignment: 9
+      pivot: {x: 0.47, y: 0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Special1_5
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 122
+        width: 128
+        height: 85
+      alignment: 9
+      pivot: {x: 0.53, y: 0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Special1_6
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 132
+        width: 112
+        height: 63
+      alignment: 9
+      pivot: {x: 0.38, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Special1_7
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 132
+        width: 140
+        height: 67
+      alignment: 9
+      pivot: {x: 0.47, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Special1_8
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 125
+        width: 112
+        height: 86
+      alignment: 9
+      pivot: {x: 0.47, y: 0.09}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Special1_9
+      rect:
+        serializedVersion: 2
+        x: 701
+        y: 124
+        width: 136
+        height: 87
+      alignment: 9
+      pivot: {x: 0.53, y: 0.09}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Special1_11
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 23
+        width: 78
+        height: 50
+      alignment: 9
+      pivot: {x: 0.26, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Special1_13
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 23
+        width: 57
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Special1_14
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 23
+        width: 36
+        height: 52
+      alignment: 9
+      pivot: {x: 0.44, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Special1_15
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 23
+        width: 43
+        height: 61
+      alignment: 9
+      pivot: {x: 0.56, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Special1_16
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 23
+        width: 43
+        height: 61
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Special1_17
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 23
+        width: 43
+        height: 61
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Special1_18
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 23
+        width: 36
+        height: 52
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Special1_19
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 23
+        width: 30
+        height: 44
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

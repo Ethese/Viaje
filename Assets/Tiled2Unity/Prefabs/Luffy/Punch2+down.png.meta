@@ -1,0 +1,216 @@
+fileFormatVersion: 2
+guid: 68fe165b1ddf6514f8cd33ea362b9f90
+timeCreated: 1497381826
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Punch2+down_0
+    21300002: Punch2+down_1
+    21300004: Punch2+down_2
+    21300006: Punch2+down_3
+    21300008: Punch2+down_4
+    21300010: Punch2+down_5
+    21300012: Punch2+down_6
+    21300014: Punch2+down_7
+    21300016: Punch2+down_8
+    21300018: Punch2+down_9
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 10
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Punch2+down_0
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 13
+        width: 45
+        height: 37
+      alignment: 9
+      pivot: {x: 0.41, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Punch2+down_1
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 13
+        width: 39
+        height: 45
+      alignment: 9
+      pivot: {x: 0.41, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Punch2+down_2
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 13
+        width: 43
+        height: 44
+      alignment: 9
+      pivot: {x: 0.38, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Punch2+down_3
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 13
+        width: 43
+        height: 71
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Punch2+down_4
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 13
+        width: 30
+        height: 95
+      alignment: 9
+      pivot: {x: 0.8, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Punch2+down_5
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 13
+        width: 30
+        height: 111
+      alignment: 9
+      pivot: {x: 0.83, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Punch2+down_6
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 13
+        width: 45
+        height: 102
+      alignment: 9
+      pivot: {x: 0.44, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Punch2+down_7
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 13
+        width: 39
+        height: 47
+      alignment: 9
+      pivot: {x: 0.29, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Punch2+down_8
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 13
+        width: 40
+        height: 30
+      alignment: 9
+      pivot: {x: 0.25, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Punch2+down_9
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 13
+        width: 34
+        height: 34
+      alignment: 9
+      pivot: {x: 0.2, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

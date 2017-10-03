@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/scenes/VideoJuegos.unity
+- path: Assets/scenes/Planeta Innovacion.unity
   isLoaded: 1
   isActive: 1
