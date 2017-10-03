@@ -90,13 +90,17 @@
     <Compile Include="Assets\Scripts\Camera\Follow.cs" />
     <Compile Include="Assets\Scripts\MovimientoJulio.cs" />
     <Compile Include="Assets\Scripts\PlayerMove.cs" />
+    <Compile Include="Assets\Scripts\SaveAndLoad\Checkpoint.cs" />
+    <Compile Include="Assets\Scripts\SaveAndLoad\SaveStates.cs" />
     <Compile Include="Assets\Scripts\Shiip\Movimiento.cs" />
     <Compile Include="Assets\Scripts\ShipLand.cs" />
+    <Compile Include="Assets\Scripts\World\Distance.cs" />
     <Compile Include="Assets\Scripts\World\Menu.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Imported Assets\spritefont_and_other\Pixel Font - Tripfive\_README.txt" />
     <None Include="Assets\Imported Assets\spritefont_and_other\document_and_picturelist\readme.txt" />
+    <None Include="Assets\SaveData.xml" />
     <None Include="Assets\Shaders\MaskShader.shader" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

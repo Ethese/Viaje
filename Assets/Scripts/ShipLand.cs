@@ -31,7 +31,7 @@ namespace Cheche
                 anim.enabled = true;
                 if (transform.position.y > 999)
                 {
-                    SceneManager.LoadScene("Ship");
+                    SceneManager.LoadScene("Space");
                 }
             }
         }
