@@ -11,7 +11,7 @@ namespace Viaje
 
         //variable
         private bool puedeInt = false;
-        private bool close = true;
+        public bool close = true;
 
         //reference
         public Canvas press;

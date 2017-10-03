@@ -45,6 +45,7 @@ namespace Viaje
             if(col.tag == "goldCard")
             {
                 gotCard = true;
+                Destroy(col.gameObject);
             }
         }
 
