@@ -1,8 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
-- path: Assets/scenes/Ship.unity
-=======
 - path: Assets/scenes/Test.unity
->>>>>>> f4df945932c5e7fce6f3a6007ec15558af43631a
   isLoaded: 1
   isActive: 1

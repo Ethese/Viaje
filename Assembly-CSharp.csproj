@@ -56,6 +56,7 @@
      <Compile Include="Assets\Scripts\Background and minimap\Parallax.cs" />
      <Compile Include="Assets\Scripts\Background and minimap\ScrollUV.cs" />
      <Compile Include="Assets\Scripts\Camera\Follow.cs" />
+     <Compile Include="Assets\Scripts\MovimientoJulio.cs" />
      <Compile Include="Assets\Scripts\PlayerMove.cs" />
      <Compile Include="Assets\Scripts\Shiip\Movimiento.cs" />
      <Compile Include="Assets\Scripts\ShipLand.cs" />
