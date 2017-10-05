@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2015
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViajeCitt", "ViajeCitt.csproj", "{DC6ECC15-EC8F-DFED-F43B-FD57007A04A2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViajeCitt.Editor", "ViajeCitt.Editor.csproj", "{6A8FAA72-D7EF-6F6C-D171-DF21C2A012EE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +15,10 @@ Global
 		{DC6ECC15-EC8F-DFED-F43B-FD57007A04A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DC6ECC15-EC8F-DFED-F43B-FD57007A04A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DC6ECC15-EC8F-DFED-F43B-FD57007A04A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A8FAA72-D7EF-6F6C-D171-DF21C2A012EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A8FAA72-D7EF-6F6C-D171-DF21C2A012EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A8FAA72-D7EF-6F6C-D171-DF21C2A012EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A8FAA72-D7EF-6F6C-D171-DF21C2A012EE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,8 +1,5 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-
-//using UnityEngine.UI;
-
 using UnityEngine;
 
 namespace Cheche
@@ -15,7 +12,7 @@ namespace Cheche
         bool Paused;
         void Start()
         {
-            Paused = false; 
+            Paused = false;
         }
         void Update()
         {
@@ -25,10 +22,10 @@ namespace Cheche
         void OnTriggerEnter2D(Collider2D other)
         {
             activo = true;
-            UI.SetActive(true);
             TextMesh text = UI.GetComponent<TextMesh>();
             nombre = transform.name;
             text.text = transform.name;
+            UI.SetActive(true);
         }
         void OnTriggerExit2D(Collider2D other)
         {

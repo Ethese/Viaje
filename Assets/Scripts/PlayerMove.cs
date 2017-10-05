@@ -31,7 +31,7 @@ public class PlayerMove : MonoBehaviour {
     // Ground check
     private void OnTriggerEnter2D(Collider2D col)
     {
-        if (col.tag == "floor")
+        if (col.tag == "floor" || col.tag == "Piso")
         {
             puedeSaltar = true;
             ani.SetBool("Saltar", false);
@@ -40,7 +40,7 @@ public class PlayerMove : MonoBehaviour {
 
     private void OnTriggerStay2D(Collider2D col)
     {
-        if (col.tag == "floor")
+        if (col.tag == "floor" || col.tag == "Piso")
         {
             puedeSaltar = true;
             ani.SetBool("Saltar", false);
@@ -49,7 +49,7 @@ public class PlayerMove : MonoBehaviour {
 
     private void OnTriggerExit2D(Collider2D col)
     {
-        if (col.tag == "floor")
+        if (col.tag == "floor" || col.tag == "Piso")
         {
             puedeSaltar = false;
             ani.SetBool("Saltar", true);

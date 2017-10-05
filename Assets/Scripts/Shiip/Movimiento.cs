@@ -12,7 +12,9 @@ namespace Cheche
         public Animator anim;
         public Vector3 pos;
         public Quaternion rot;
-        public GameObject planeta;
+        GameObject planeta;
+
+
         void Start()
         {
             anim = GetComponent<Animator>();
@@ -73,7 +75,7 @@ namespace Cheche
 
         void cambioscene()
         {
-            //planeta = GameObject.FindGameObjectWithTag("Planets");
+            planeta = GameObject.FindGameObjectWithTag("Planets");
             Menu menu = planeta.GetComponent<Menu>();
             if (menu.activo == true)
             {

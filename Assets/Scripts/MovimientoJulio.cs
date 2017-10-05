@@ -12,11 +12,13 @@ namespace Cheche
         public Animator anim;
         public Transform groundEnd;
         public GameObject nave;
-        public bool isGrounded = false;
         public LayerMask player;
-        public float veljump;
         public bool volar;
         public GameObject UI;
+
+        //LLANOS
+        public bool puedeSaltar = false;
+        public int salto;
         // Use this for initialization
         void Start()
         {
@@ -28,12 +30,11 @@ namespace Cheche
         void Update()
         {
             takeControl();
-            isGrounded = Physics2D.Linecast(this.transform.position, groundEnd.position, 1 << player);
             movimiento();
         }
         void FixedUpdate()
         {
-            salto();
+            Salto();
         }
 
         void movimiento()
@@ -46,28 +47,18 @@ namespace Cheche
                 if (Input.GetAxisRaw("Horizontal") > 0)
                 {
                     transform.Translate(Vector2.right * mov * Time.deltaTime);
-                    transform.localScale = new Vector3(-10, 10, 1);
+                    transform.localScale = new Vector3(-5, 5, 1);
                     moving = true;
                 }
 
                 if (Input.GetAxisRaw("Horizontal") < 0)
                 {
                     transform.Translate(Vector2.left * mov * Time.deltaTime);
-                    transform.localScale = new Vector3(10, 10, 1);
+                    transform.localScale = new Vector3(5, 5, 1);
                     moving = true;
                 }
             }
-            anim.SetBool("Walking", moving);
-        }
-
-        void salto()
-        {
-
-            if (Input.GetKey(KeyCode.Space) && isGrounded && control == true)
-            {
-                rb.AddForce(Vector2.up * veljump);
-            }
-            anim.SetBool("Jumping", isGrounded);
+            anim.SetBool("Move", moving);
         }
 
         void takeControl()
@@ -81,7 +72,7 @@ namespace Cheche
 
         void OnTriggerStay2D(Collider2D coll)
         {
-            if (coll.tag != "Piso")
+            if (coll.tag == "Piso" && coll.tag == "Muro")
             {
                 UI.SetActive(true);
                 TextMesh text = UI.GetComponent<TextMesh>();
@@ -93,12 +84,52 @@ namespace Cheche
             }
             else
             {
+                Debug.Log("lawea");
                 UI.SetActive(false);
+            }
+
+            //ptJump
+            if (coll.tag == "floor" || coll.tag == "Piso")
+            {
+                puedeSaltar = true;
+                anim.SetBool("Saltar", false);
             }
         }
         void OnTriggerExit2D(Collider2D coll)
         {
             UI.SetActive(false);
+
+            //PtJump
+            if (coll.tag == "floor" || coll.tag == "Piso")
+            {
+                puedeSaltar = false;
+                anim.SetBool("Saltar", true);
+                anim.SetBool("Move", false);
+            }
+        }
+
+
+        //LLANOS
+        // Ground check
+        private void OnTriggerEnter2D(Collider2D col)
+        {
+            if (col.tag == "floor" || col.tag == "Piso")
+            {
+                puedeSaltar = true;
+                anim.SetBool("Saltar", false);
+            }
+        }
+        void Salto()
+        {
+            //-----Jump-----//
+            if (puedeSaltar)
+            {
+                if (Input.GetKeyDown("space"))
+                {
+                    rb.AddForce(Vector2.up * salto);
+                }
+            }
         }
     }
+
 }
